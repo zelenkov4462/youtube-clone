@@ -1,0 +1,13 @@
+.videoMain_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.videoSec {
+  padding: 0 20px;
+}
+
+.videoLists > div {
+    float: right;
+    width: 80%;
+}

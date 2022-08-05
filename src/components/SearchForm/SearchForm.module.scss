@@ -1,0 +1,21 @@
+.searchForm_container{
+  width: 100%;
+}
+
+input {
+  min-width: 70%;
+  background-color: #121212;
+  border: none;
+  padding: 1rem 0.6rem;
+  color: #fff;
+
+
+}
+
+button {
+  background-color: grey;
+  border: none;
+  padding: 1rem;
+  width: 15%;
+  cursor: pointer;
+}

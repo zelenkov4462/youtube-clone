@@ -1,0 +1,10 @@
+.videoItems {
+  display: flex;
+  cursor: pointer;
+  padding: 0 0 15px;
+}
+
+.videoInfo > .channelTitle, .titleVideo{
+  color: #fff;
+  font-family: system-ui;
+}
