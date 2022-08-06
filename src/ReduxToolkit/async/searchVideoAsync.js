@@ -3,10 +3,11 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import URL from "../../api/URL";
 
 import API_KEY from "../../api/api_key";
+import { addSearchQuery } from "../Slices/videoSlice";
 
-export const getVideosAsync = createAsyncThunk(
-  "videos/getVideos",
-  async function (_, { rejectWithValue }) {
+export const searchVideosAsync = createAsyncThunk(
+  "videos/searchVideos",
+  async function (searchQuery, { rejectedWithValue, dispatch }) {
     try {
       const {
         data: { items: videos },
@@ -15,12 +16,13 @@ export const getVideosAsync = createAsyncThunk(
           part: "snippet",
           maxResults: 2,
           key: API_KEY,
-          q: "nature",
+          q: searchQuery,
         },
       });
+      // dispatch(addSearchQuery(searchQuery));
       return videos;
     } catch (e) {
-      return rejectWithValue(e.message);
+      return rejectedWithValue(e.message);
     }
   }
 );
