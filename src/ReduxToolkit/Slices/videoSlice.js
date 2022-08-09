@@ -39,7 +39,7 @@ export const searchVideosAsync = createAsyncThunk(
       } = await URL.get("search", {
         params: {
           part: "snippet",
-          maxResults: 5,
+          maxResults: 3,
           key: API_KEY,
           q: searchQuery,
         },
@@ -125,7 +125,11 @@ const videoSlice = createSlice({
     [getVideosAsync.rejected]: setRejected,
 
     [searchVideosAsync.pending]: setPending,
-    [searchVideosAsync.fulfilled]: setFulfilled,
+    [searchVideosAsync.fulfilled]: (state, action) => {
+      state.status = "resolved";
+      state.videos = action.payload;
+      state.mainVideo = [action.payload[0]];
+    },
     [searchVideosAsync.rejected]: setRejected,
 
     [getLikesAsync.fulfilled]: (state, action) => {

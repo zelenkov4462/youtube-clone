@@ -1,3 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
-    background-color: grey;
+    background-color: rgba(0,0,0,.9);
+    overflow-x: hidden;
+    /*min-width: 1170px;*/
+    /*margin: 0 auto;*/
+}
+.container_App {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.userInfo {
+    text-align: center;
+}
+
+.signOut {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.signOut-btn {
+    color: #fff;
+    background-color: #000;
+    font-size: 2rem;
+    margin-bottom: 2%;
 }

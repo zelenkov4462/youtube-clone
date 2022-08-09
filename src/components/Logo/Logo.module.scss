@@ -1,3 +1,16 @@
 .logo {
+  display: flex;
+  min-width: 10%;
+  margin-left: 2rem;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+}
 
+.logoName {
+  padding-left: 0.5rem;
+}
+
+a {
+  text-decoration-line: none;
 }

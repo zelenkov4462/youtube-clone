@@ -5,13 +5,30 @@ iframe{
   width: 850px;
   height: 500px;
 }
-
+.titleVideo {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.descriptionBlock span {
+  margin-right: 1%;
+}
 .videoInfo > .channelTitle, .titleVideo{
   color: #fff;
   font-family: system-ui;
 }
 .descriptionVideo{
-  color: #Fff;
+  color: grey;
   font-family: system-ui;
   width: 75%;
+}
+
+.viewCountVideo {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.dateCreateVideo {
+  color: #ffffff;
+  font-size: 1.1rem;
 }

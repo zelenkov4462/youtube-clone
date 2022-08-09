@@ -1,21 +1,23 @@
 .searchForm_container{
-  width: 100%;
+  width: 90%;
+  margin-left: 10%;
+  align-items: center;
 }
 
 input {
-  min-width: 70%;
+  min-width: 50%;
   background-color: #121212;
   border: none;
-  padding: 1rem 0.6rem;
+  padding: 1rem 0.6rem 0.6rem;
   color: #fff;
 
 
 }
 
 button {
-  background-color: grey;
+  background-color: hsla(0, 0%, 100%, 0.08);
   border: none;
-  padding: 1rem;
-  width: 15%;
+  padding: 1rem 0.6rem 0.6rem;
+  width: 8%;
   cursor: pointer;
 }

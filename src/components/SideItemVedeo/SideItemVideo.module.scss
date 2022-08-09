@@ -1,7 +1,15 @@
 %videoItems-shared {
   display: flex;
   cursor: pointer;
-  padding: 0 0 15px;
+  //padding: 0 0 15px;
+  min-width: 380px;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%colorInfo {
+  color: darkgray;
 }
 
 .videoItems {
@@ -20,4 +28,35 @@
 .videoInfo > .channelTitle, .titleVideo{
   color: #fff;
   font-family: system-ui;
+}
+
+.titleVideo {
+  font-size: 0.9rem;
+}
+
+.videoItemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin-left: 1rem;
+  & > div {
+    margin-bottom: 5px;
+  }
+}
+
+.info {
+
+}
+
+.channel{
+@extend %colorInfo
+}
+
+.view{
+  @extend %colorInfo
+}
+
+.dataCreate{
+  @extend %colorInfo
 }

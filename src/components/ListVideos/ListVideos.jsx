@@ -6,16 +6,21 @@ import { useSelector } from "react-redux";
 
 const ListVideos = () => {
   const videos = useSelector((state) => state.videos.videos);
-
+  const statistics = useSelector((state) => state.videos.videos);
+  console.log(videos);
+  console.log(statistics);
   // const videoList = videos.slice(1);
   return (
     <div>
       {videos.map((video) => (
-        <div key={video.id.videoId}>
+        <div className={styles.sideItemVideo} key={video.id.videoId}>
           <SideItemVideo
             url={video.snippet.thumbnails.medium.url}
             title={video.snippet.title}
             videoId={video.id.videoId}
+            channelTitle={video.snippet.channelTitle}
+            data={video.snippet.publishTime}
+            // veiwCount={}
           />
         </div>
       ))}
