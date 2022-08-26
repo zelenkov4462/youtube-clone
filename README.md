@@ -1,6 +1,6 @@
 React, ReduxToolkit (createAsyncThunk).
 
-Работа с Google - "youtube data api v3". 
+Работа с Google Cloud - "youtube data api v3". 
 
 ![2 1](https://user-images.githubusercontent.com/101303690/186919618-2d7c64b1-d8cf-42f8-818d-6b3221c13045.png)
 
